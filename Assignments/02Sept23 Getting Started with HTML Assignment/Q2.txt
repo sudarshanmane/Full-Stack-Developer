@@ -1,0 +1,41 @@
+ Q2) Explain th: purpos: of comm:nts in HTML and provid: an :xampl: of how to us: comm:nts in an HTML
+docum:nt$ ?
+
+ans --> The purpose using comments in the HTML is
+1. Improving code readability : it helps to the developer to understand the purpose of the specific section of the code, 
+   making it easier for the developers to understand and maintain the code, especially when revisiting it at later date.
+
+2. Temporarily disabling code : When we comment out the code, the commented code will not be rendered on the webpage/website.
+   which helps to the developers for testing the multiple scenarios without permanently deleting code.
+
+3. Adding Notes or Reminders : Comments can be used to leave the notes or the reminders for the other developers to
+  understand the purpose of the provided section of the code.
+
+Example : 
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Simple Program</title>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header>
+      <h1>Header</h1>
+      <!-- navbar -->
+      <nav>
+        <div>tabs</div>
+        <div>tabs</div>
+        <div>tabs</div>
+        <div>tabs</div>
+        <div>tabs</div>
+      </nav>
+    </header>
+    <!-- Add page content here -->
+    <main>Page Content</main>
+  </body>
+</html>
+
+

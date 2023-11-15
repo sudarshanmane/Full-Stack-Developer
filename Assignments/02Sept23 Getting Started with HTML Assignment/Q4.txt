@@ -1,0 +1,15 @@
+Q4)  Writ: a short not: on Tag and :l:m:nt with an :xampl:$
+
+Ans --> 
+1. In HTML a tag is a keyword which is enclosed between angle brackets ( <img> ) that indicates the start or end of the html element.
+   Elements are the building blocks of the HTML documents and defines the structure and content of a webpage.
+
+   Examples: 
+   1. <p></p> tag for the paragraph
+   2. <img></img> tag for representing an image
+   3. <h1> tag to represent a heading
+   
+   an element can have the attributes in other words properties which defines the additional information related to the elements.
+   consider example of an image :
+   <img src="image src" width="100px"></img>
+   here the src and the width both are the attributes of the img tag.
