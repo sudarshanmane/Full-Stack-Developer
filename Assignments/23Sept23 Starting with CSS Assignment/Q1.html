@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Q1</title>
+    <style>
+      body {
+        padding: 20px;
+      }
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .section-ways-to-add-css dt {
+        font-weight: bold;
+        font-size: 18px;
+      }
+      code,
+      pre {
+        background: rgb(149, 197, 197);
+        padding: 5px;
+        display: block;
+        margin-top: 10px;
+      }
+      .styling-types-description-title {
+        margin-bottom: 10px;
+      }
+      .section-answer-two dl {
+        line-height: 20px;
+      }
+      span {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <header><strong>CSS Assignment</strong></header>
+    <main>
+      <section class="section-ways-to-add-css">
+        <dl>
+          <dt><span>Answer 1.</span>Different ways to add the css</dt>
+          <dd>
+            <div>1. Inline styling</div>
+            <div>2. Style tag within the same html file</div>
+            <div>
+              3. Creating Separate css file and attach it with the html file
+              using link tag
+            </div>
+          </dd>
+        </dl>
+      </section>
+      <section class="styling-types-description">
+        <dl>
+          <dt><b>1. Inline Styling</b></dt>
+          <dd>
+            <p>
+              When we write the css withing the html tag creating an attribute
+              style such styling is called as the Inline styling.
+            </p>
+            <dl>
+              <dt class="styling-types-description-title">example:</dt>
+              <dd>
+                <code
+                  >&lt;div style="color:black; font-size:10px height: 100px;
+                  width: 100px; background:orange; margin-top:20px"&gt;
+                  container content goes here &lt;div&gt
+                  <br />
+                  <b>result:</b>
+                  <div
+                    style="
+                      color: black;
+                      font-size: 20px;
+                      height: 100px;
+                      width: 100px;
+                      margin-top: 10px;
+                      background: orange;
+                    "
+                  ></div>
+                </code>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <dl>
+          <dt><b>2. Internal Styling</b></dt>
+          <dd>
+            <p>
+              When we create a style tag within the head tag and write the css
+              within the style tag then that way is called as the inline
+              styling.
+            </p>
+            <dl>
+              <dt class="styling-types-description-title">example:</dt>
+              <dd>
+                <code>
+                  <div>
+                    <pre>
+                     &lt;style&gt;
+                       .container {
+                            color: black;
+                            font-size: 20px;
+                            height: 100px;
+                            width: 100px;
+                            margin-top: 10px;
+                            background: grey;
+                          }
+                       &lt;/style&gt;
+
+
+                  &lt;div class="container"&gt; container content goes here &lt;div&gt
+
+                  <b>result:</b>
+                  <div
+                    style="
+                      margin-left: 11%;
+                      color: black;
+                      font-size: 20px;
+                      height: 100px;
+                      width: 100px;
+                      margin-top: 10px;
+                      background: grey;
+                    "
+                  ></div>
+                  </pre>
+                  </div>
+                </code>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+        <dl>
+          <dt><b>3. External Styling</b></dt>
+          <dd>
+            <p>
+              When we write the css withing the html tag creating an attribute
+              style such styling is called as the Inline styling.
+            </p>
+            <dl>
+              <dt class="styling-types-description-title">example:</dt>
+              <dd>
+                <code class="internal-styling-css">
+                  <pre>
+                 index.css file:
+                     &lt;style&gt;
+                       .container {
+                            color: black;
+                            font-size: 20px;
+                            height: 100px;
+                            width: 100px;
+                            margin-top: 10px;
+                            background: yellow;
+                          }
+                        &lt;/style&gt;
+
+                  index.html file:
+
+                  &lt;div class="container"&gt; container content goes here &lt;div&gt;
+
+                   <b>result:</b>
+                  <div
+                    style="
+                      margin-left: 11%;
+                      color: black;
+                      font-size: 20px;
+                      height: 100px;
+                      width: 100px;
+                      margin-top: 10px;
+                      background: yellow;
+                    "
+                  ></div>
+                  </pre>
+                </code>
+              </dd>
+            </dl>
+          </dd>
+        </dl>
+      </section>
+      <section class="section-answer-two">
+        <b>
+          What happens when we try to write the css for the same element in
+          different ways. like inline, internal and external ways.
+        </b>
+        <br />
+        <b>
+          <span>Answer 2. </span>
+          when we target to style the same element using different ways then
+          :</b
+        >
+        <dl>
+          <dt><b>If styling using the inline styling approach then:</b></dt>
+          <dd>
+            The inline styling has more specificity which means they will
+            override the styles applied by the other ways.
+          </dd>
+          <br />
+          <dt><b>If styling using the Internal styling approach then:</b></dt>
+          <dd>
+            The internal styling has specificity between the inline and the
+            external means, the style applied by the inline will get override by
+            the inline style approach and internal styles will override to the
+            styles applied by the external way.
+          </dd>
+          <br />
+          <dt><b>If styling using the external styling approach then:</b></dt>
+          <dd>
+            The external styling has less specificity. and the style applied by
+            the inline and the internal ways will get the first preference over
+            the external styling
+          </dd>
+        </dl>
+      </section>
+    </main>
+  </body>
+</html>
