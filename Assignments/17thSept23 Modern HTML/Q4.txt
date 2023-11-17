@@ -1,0 +1,24 @@
+Solution :
+
+Improving the accessibility of web applications is crucial to ensure
+ that the people with the disabilities can access and use them easily.
+ Here are some ways to improve the accessibility of the web applications.
+
+ 1. Use Semantic HTML:
+     I. Utilize semantic HTML elements like <header>, <nav>, <main>, <footer> 
+        to provide a clear document structure. The semantic tags help screen readers 
+        to understand the screen content and it's hierarchy easily.
+    II. Properly label form elements using <label> tag and associate them with the corresponding 
+        input field using for attribute.
+
+2. Provide the descriptive text for the image:
+   Providing the alternative text for the image using the 'alt' attribute ensures that 
+   sometimes some reason if the image does not load then the user can guess the image structure.
+
+3. Implement ARIA(Accessible Rich Internet application) Roles and Attributes:
+   I. Use ARIA roles and attributes to enhance the accessibility of dynamic content, 
+      such as single-page applications (SPAs) and AJAX-driven interfaces.
+  
+  II. ARIA roles, states, and properties help define the roles and behaviors of UI components for
+   assistive technologies. For example, you can use role="button", aria-haspopup="true", etc.,
+    to provide additional information about the functionality of specific elements. 

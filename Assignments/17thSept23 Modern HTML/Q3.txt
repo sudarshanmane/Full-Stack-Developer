@@ -1,0 +1,12 @@
+Q4) Define accessibility in the context of the web development. Discus why it's essential to
+   create accessible website and how it benefits different user groups?
+
+Solution : accessibility in the context of the web development refers to the practice of designing and developing
+        an application or web application ensures the equal accessibility to the people with the disabilities. The disabilities may be like
+        disabilities may be visual or auditory. The goal is to make the digital content and services available to as many people as possible, 
+        regardless of their abilities or disabilities.
+        1. Inclusivity : Accessible websites ensure that their content is accessible to all users regardless of their abilities, can access and interact with the content.
+        2. Legal Compliance: Many countries have implemented laws and regulations that require websites to be accessible. Like America.
+        3. User Experience: Improving accessibility often leads to a better user experience for everyone.
+        4. Search Engine Optimizations: Accessible websites are well structured and easily navigable content often results in better search engine rankings.
+

@@ -1,0 +1,24 @@
+Q1) List out Features of  HTML 5
+Solution :
+
+HTML5 the latest version of the Hypertext Markup Language, Introduced several new features and improvements:
+Like they has introduced to the New Tags Like:
+1. New Structural Elements
+    1. <section> tag : defines a section in the html document
+    2. <nav> tag : Represent the navigation menu
+    3. <header> tag : Represents a group of the introductory or navigational aids
+    4. <footer> tag : Represents a footer of a content on the page
+    5. <aside> tag : Represents to the sidebar of the document of the page
+
+2. New Media Elements
+    1. <audio> tag : we can play with the audio
+    2. <video> tag : we can play with the video
+
+3. New Input Types:
+   1. date, time, datatime, month, week for the date and time Input
+   2. email, url, tel for the specific inputs
+
+4. SVG (Scalable vector graphics) : we can directly integrate to the svg into the html
+
+5. Form Validation: HTML5 introduced built-in form validation for various input types, reducing the need for JavaScript-based validation.
+

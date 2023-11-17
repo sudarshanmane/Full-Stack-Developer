@@ -1,0 +1,11 @@
+Q2 What are the html entities? List out 5 Commonly used entities.
+
+Solution :
+HTML entities are the special codes that Represents the some characters that have special meanings.
+They often used to display reversed characters such as '<' or '>' as well as the special characters like ampersand (&)
+examples :
+1. &amp - Ampersand (&)
+2. &lt - Less than (<)
+3. &gt - Greater than (>)
+4 &quot - Double quotation mark (")
+5. &nbsp - Non-breaking space

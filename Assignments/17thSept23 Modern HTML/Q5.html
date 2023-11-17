@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      body {
+        padding: 20px;
+      }
+
+      .dl-title {
+        margin-top: 10px !important;
+        font-weight: bold;
+      }
+      .dl-title > span {
+        color: green;
+      }
+      code {
+        background: #e7eeee;
+      }
+      header {
+        text-align: center;
+      }
+      header > strong {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      footer {
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <header><strong>HTML5 Features</strong></header>
+    <main class="main-containt-html5-features" style="display: flex">
+      <section class="sementic-emlements-section">
+        <dl>
+          <dt class="dl-title"><span>1.</span> Semantic Elements</dt>
+          <dd>
+            header, nav, aside, main, section, article, footer these elements
+            helps to define the structure of the webpage more semantically.
+            making it clearer and more meaningful.
+          </dd>
+          <dt class="dl-title"><span>2.</span> Media Elements</dt>
+          <dd>
+            <code>&lt;audio&gt;, &lt;video&gt; </code>
+            these multimedia elements allow you to embed audio and video
+            directly into your web pages.
+          </dd>
+          <dt class="dl-title"><span>3.</span> Form Controls</dt>
+          <dd>
+            <div>
+              1. <code>&lt;input&gt; </code> attributes like 'type'='email',
+              'type'='url', 'type'='tel' and other introduced.
+            </div>
+            <div>
+              2. <code>&lt;datalist&gt; </code> data list allow to provide some
+              predefined options for an <code>&lt;input&gt;</code> element
+            </div>
+          </dd>
+          <dt class="dl-title"><span>4.</span> API's</dt>
+          <dd>
+            <div>
+              1. Web storage localStorage and sessionStorage : provides a way to
+              store the data to the client's machine
+            </div>
+            <div>
+              2. <code>&lt;datalist&gt; </code> data list allow to provide some
+              predefined options for an <code>&lt;input&gt;</code> element
+            </div>
+          </dd>
+        </dl>
+      </section>
+    </main>
+    <footer
+      style="
+        border: 1px solid black;
+        height: 50px;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      These were some of the features of the
+      <pre style="color: green"> HTML5</pre>
+    </footer>
+  </body>
+</html>
