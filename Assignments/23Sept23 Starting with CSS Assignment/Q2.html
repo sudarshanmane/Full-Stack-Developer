@@ -3,7 +3,366 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Q2</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        width: 98%;
+      }
+
+      .answer-one-container {
+        border: 1px solid black;
+        width: 85%;
+        margin: auto;
+        padding: 10px;
+      }
+
+      .answer-one-container > p {
+        margin-bottom: 15px;
+      }
+      .answer-one-container__para-one--modify {
+        color: green;
+        font-size: 20px;
+      }
+
+      .answer-one-container__para-two--modify {
+        color: rgb(84, 233, 84);
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+      }
+      .answer-one-container__para-three--modify {
+        color: rgb(24, 149, 24);
+      }
+
+      .answer-one-container__para-four--modify {
+        color: blue;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+
+      .answer-one-container__para-five--modify {
+        color: green;
+      }
+
+      .bem-naming-convention-header--modify {
+        border: 1px solid black;
+        text-align: center;
+        margin-top: 0px !important;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        background: #eba6a6;
+      }
+      .bem-naming-convention-header > b {
+        margin: 10px;
+        display: block;
+      }
+      .bem-naming-convention-header__lnk {
+        margin-left: 20%;
+      }
+      .bem-image-container--modify {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+      }
+      .bem-image-container--modify > img {
+        width: 50%;
+      }
+      .main-container--bem {
+        position: absolute;
+        top: 15%;
+        padding: 3%;
+      }
+      .section-one > p {
+        padding: 10px;
+      }
+      .section-one__para-dots {
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+      }
+      .section-one__image-youtube-header {
+        width: 100%;
+        padding: 10px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <header
+      class="bem-naming-convention-header bem-naming-convention-header--modify"
+    >
+      <b> CSS Naming Conventions - BEM </b>
+      <footer>
+        <a
+          class="bem-naming-convention-header__lnk"
+          href="https://medium.com/codeburst/understanding-css-bem-naming-convention-a8cca116d252"
+          >Cem Eygi</a
+        >
+      </footer>
+    </header>
+    <main class="main-container main-container--bem">
+      <section>
+        <header><strong>Answer 1.</strong></header>
+        <div class="answer-one-container">
+          <p
+            class="answer-one-container__para-one answer-one-container__para-one--modify"
+          >
+            Cascading Style Sheets (CSS) is a stylesheet language used to
+            describe the presentation of a document written in HTML or XML
+            (including XML dialects such as SVG, MathML or XHTML). CSS describes
+            how elements should be rendered on screen, on paper, in speech, or
+            on other media.
+          </p>
+          <p
+            class="answer-one-container__para-two answer-one-container__para-two--modify"
+          >
+            CSS is among the core languages of the open web and is standardized
+            across Web browsers according to W3C specifications. Previously, the
+            development of various parts of CSS specification was done
+            synchronously, which allowed the versioning of the latest
+            recommendations. You might have heard about CSS1, CSS2.1, or even
+            CSS3. There will never be a CSS3 or a CSS4; rather, everything is
+            now CSS without a version number.
+          </p>
+          <p class="answer-one-container__para-three--modify">
+            After CSS 2.1, the scope of the specification increased
+            significantly and the progress on different CSS modules started to
+            differ so much, that it became more effective to develop and release
+            recommendations separately per module. Instead of versioning the CSS
+            specification, W3C now periodically takes a snapshot of the latest
+            stable state of the CSS specification and individual modules
+            progress. CSS modules now have version numbers, or levels, such as
+            CSS Color Module Level 5.
+          </p>
+          <p class="answer-one-container__para-four--modify">
+            CSS Introduction If you're new to web development, be sure to read
+            our CSS basics article to learn what CSS is and how to use it. CSS
+            Tutorials Our CSS learning area contains a wealth of tutorials to
+            take you from beginner level to proficiency, covering all the
+            fundamentals.
+          </p>
+          <p class="answer-one-container__para-five--modify">
+            CSS (Cascading Style Sheets) is used to style and layout web pages —
+            for example, to alter the font, color, size, and spacing of your
+            content, split it into multiple columns, or add animations and other
+            decorative features. This module provides a gentle beginning to your
+            path towards CSS mastery with the basics of how it works, what the
+            syntax looks like, and how you can start using it to add styling to
+            HTML.
+          </p>
+        </div>
+      </section>
+      <section class="section-one">
+        <header><strong>Answer 2.</strong></header>
+        <div class="bem-image-container bem-image-container--modify">
+          <img
+            class="bem-image"
+            src="https://miro.medium.com/v2/resize:fit:828/format:webp/1*xHJeNZlLtdFkjMMIL1z4Ag.jpeg"
+            alt=""
+          />
+        </div>
+        <p>
+          Some developers don’t pay that much attention to naming. They claim
+          that there isn’t enough time on thinking about which name to give each
+          class. That may be right, but in the long-run low-quality code
+          consumes much more time.
+        </p>
+        <p class="section-one__para-dots">. . .</p>
+        <b>What is BEM?</b>
+        <p>
+          BEM Stands for Block, Element and Modifier. It is a css naming
+          convention for writing cleaner and more readable CSS classes.
+        </p>
+        <p>
+          BEM also refers to write independent CSS blocks in order to reuse them
+          later in your project.
+        </p>
+        <b>how BEM class namings are:</b>
+        <pre>
+            // blocks are named as standard CSS classes
+            .block{
+
+            }
+            // elements declared with 2 underscores, after block
+              .block__elements{
+              }
+            // modifiers are declared with 2 dashes, after block or after element
+            .block--modifier{
+
+            }
+            .block__element--modifier{
+
+            }
+        </pre>
+        <b>What is a Block?</b>
+        <p>
+          Blocks are the independent, reusable and usually bigger components of
+          a webpage. they can have elements and modifiers.
+        </p>
+        <p>
+          we can count the bigger elements of a webpage like &lt;header&gt;,
+          &lt;nav&gt;, &lt;section&gt;, &lt;form&gt;, &lt;article&gt;,
+          &lt;footer&gt; as block elements.
+        </p>
+        <div class="section-one__image-youtube-header">
+          <img
+            src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*otmY9AsFC3v_wkpTYGyiUQ.png"
+            alt=""
+          />
+          <p style="text-align: center; margin-bottom: 10px">
+            Youtube header as block
+          </p>
+        </div>
+
+        <p>
+          For example Youtube's Header as Navigation can be used as block, and
+          can be declared as;
+        </p>
+        <pre>
+            &lt;header class='youtube-header'&gt;&lt;/header&gt;
+            &lt;style&gt;
+            .youtube-header{
+              // Rules
+            }
+            &lt;/style&gt;
+          </pre
+        >
+        <b>Elements</b>
+        <p>
+          Elements are children of blocks. An element can only have 1 parent and
+          can't used independently outside of that block.
+        </p>
+        <div class="section-one__image-youtube-header">
+          <img
+            src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*Qnp9OzN6VV7e2IY32wsBbQ.png"
+            alt=""
+          />
+          <p style="text-align: center; margin-bottom: 10px">
+            Youtube Header Elements as Hamburger Menu, Youtube Logo, Search
+            field and the rest
+          </p>
+        </div>
+        <b
+          >Naming of an element must start with it's parent block name, 2
+          underscores after it, and end with its own name;
+        </b>
+        <pre>
+            &lt;header class="youtube-header"&gt;
+              &lt;img class="youtube-header__logo"/&&gt;
+              &lt;ul class="youtube-header__list"&&gt;
+                &lt;li class="youtube-header__item"&&gt;&lt;/li&gt;&lt;li class="youtube-header__item"&>&gt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/header&gt;
+            </pre
+        >
+        <p>
+          In HTML Structure, an element can contain another element, but can’t
+          be written in BEM like this:
+        </p>
+        <pre>
+          .youtube-header__list {
+            // rules
+          }
+          .youtube-header__list__item {
+            // rules
+          }
+          // There is no such a thing as block__element__element
+        </pre>
+        <p>
+          Since the youtube-header is a block, the naming convention of it's
+          elements can be written like this:
+        </p>
+        <pre>
+          .youtube-header__logo{
+
+          }
+          .youtube-header__search{
+
+          }
+          .youtube-header__list{
+
+          }
+          .youtube-header__item{
+
+          }
+          
+        </pre>
+        <p>or the sass version:</p>
+        <pre>
+          .youtube--header{
+            // rules
+            &__logo{
+              // rules
+            }
+            &__search{
+              // rules
+            }
+            &__list{
+              // rules
+            }
+            &__item{
+              // rules
+            }
+          }
+        </pre>
+        <strong>
+          In Sass, & takes the place of the parent’s name. If you don’t know
+          Sass, you can check my article about Sass
+          <a
+            href="https://medium.com/swlh/advantages-of-using-a-preprocessor-sass-in-css-eb7310179944"
+            >here</a
+          >.
+        </strong>
+        <br />
+        <br />
+        <b>Modifiers </b>
+        <p>
+          Modifiers Represent different state or style of classes. They can be
+          used both for blocks or elements.
+        </p>
+        <p>
+          In HTML a modifier must be used together with its block/element, as
+          additional features:
+        </p>
+        <pre>
+            &lt;form class="form form--large"&gt;
+              &lt;button class="form__button form__button--red"&gt;&lt;/button&gt;
+            &lt;/form&gt;</pre
+        >
+        <p>
+          The naming of a modifier must start with its parent Block name, 2
+          dashes after it, and end with its own name.
+        </p>
+        <br />
+        <b>Block — Modifier/: </b>
+        <p>
+          .form { // rules .form--large {} // Block modifiers .form--small {} }
+        </p>
+        <b>Element — Modifier: </b>
+        <p>
+          .form { // rules .form__button { // rules .form__button--red {} //
+          Block Element Modifiers .form__button--green {} } }
+        </p>
+        <b>What about Great-grandchildren structures?</b>
+        <pre>
+          &lt;header&gt;
+            &lt;nav&gt;
+              &lt;ul&gt;
+                &lt;li&gt;
+                  &lt;a&gt;Some link&lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/nav&gt;
+          &lt;/header&gt;
+          </pre
+        >
+        <p>
+          Since we can’t name element inside another element, I would use the
+          header as a container, "nav" as the block and the rest just as
+          elements:
+        </p>
+      </section>
+    </main>
+  </body>
 </html>

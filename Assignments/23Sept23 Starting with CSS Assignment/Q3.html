@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .header {
+        border: 1px solid black;
+        margin: auto;
+        text-align: center;
+        padding: 10px;
+      }
+      .randome-form {
+        width: 60%;
+        margin: auto;
+        margin-top: 20px;
+      }
+      .randome-form > fieldset {
+        background: #587b77;
+      }
+      .randome-form div label {
+        margin-bottom: 3px;
+      }
+      .randome-form div input {
+        color: teal;
+        height: 23px;
+        background: rgb(210, 231, 192);
+      }
+      .randome-form div:last-child {
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        margin-top: 30px;
+      }
+      .randome-form div:last-child input {
+        width: 20%;
+        border: 2px solid black;
+        opacity: 0.5;
+        color: black;
+      }
+      .randome-form__input-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header"><strong class="header__title">form</strong></header>
+    <main class="main-container">
+      <section class="randone-form">
+        <form class="randome-form">
+          <fieldset>
+            <legend>Signup Form</legend>
+            <div class="randome-form__input-container">
+              <label for="first_name">Name</label>
+              <input type="text" name="first_name" id="first_name" />
+            </div>
+            <div class="randome-form__input-container">
+              <label for="last_name">Last Name</label>
+              <input type="text" name="last_name" id="last_name" />
+            </div>
+            <div class="randome-form__input-container">
+              <label for="username">Name</label>
+              <input type="text" name="username" id="username" />
+            </div>
+            <div class="randome-form__input-container">
+              <label for="age">Age</label>
+              <input type="text" name="age" id="age" />
+            </div>
+            <div class="randome-form__input-container">
+              <label for="emil">Emil</label>
+              <input type="text" name="emil" id="emil" />
+            </div>
+            <div class="randome-form__input-container">
+              <input type="submit" />
+            </div>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
