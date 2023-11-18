@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar</title>
+    <style>
+      nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 65px;
+        background: skyblue;
+      }
+      nav a {
+        display: flex;
+        margin: 7px 20px;
+      }
+
+      nav a:hover {
+        color: green !important;
+        text-decoration: none !important;
+      }
+
+      nav span:first-child {
+        border-style: dashed;
+      }
+
+      nav span:nth-child(2) {
+        border-style: dotted;
+      }
+
+      nav span:nth-child(3) {
+        border-style: double;
+      }
+
+      nav span:nth-child(4) {
+        border-style: groove;
+      }
+
+      nav span:nth-child(5) {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <span><a href="">Home</a></span>
+      <span><a href="">About Us</a></span>
+      <span><a href="">Contact</a></span>
+      <span><a href="">Blog</a></span>
+      <span><a href="">Login</a></span>
+    </nav>
+  </body>
+</html>
