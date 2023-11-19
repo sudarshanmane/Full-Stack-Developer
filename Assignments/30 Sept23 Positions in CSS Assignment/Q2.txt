@@ -1,0 +1,34 @@
+Q2. Explain the difference between Absolute and Relative positioning.
+
+SOlution :
+in css (cascading sheet style) both Absolute and Relative positioning are used to control the placement
+of elements on the webpage. but they do so in different ways.
+
+Differences:
+I. Relative Positioning :
+   1. When we set a css property to an element as 
+   .element{
+    position:relative;
+    top: 20px;
+    left: 30px;
+   }
+   it will remain to it's original position, But with this property we can move to that element from 
+   its original normal position to top, left, bottom or right using top property.
+
+   2. If we changed the position of an element having a position as relative then it will not change or 
+   affect the layout of the other elements. only that particular element will change its position.
+   relative to it's own position.
+
+   3. And it's space will remain empty other element's won't occupy it's space, position after changing its position 
+   after the movement of the element.
+
+II. Absolute Positioning
+   1. When we set an element to have an absolute position. it will get positioned relative to it's parent element.
+   2. It will break the normal flow of the webpage to position the element on the page. Meaning that
+    when an element get the css property 
+    {
+        position: absolute
+    }
+    it will get the position relative to its parent element. and it's original position will get to 
+    the other element.
+    3. this css property will not leave any blank space on the page.

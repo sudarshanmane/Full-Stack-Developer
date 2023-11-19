@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      header {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      section {
+        display: flex;
+      }
+      section > div > img {
+        position: absolute;
+      }
+
+      section > div > img:first-child {
+        display: flex;
+        width: 300px;
+        height: 300px;
+        z-index: 1;
+      }
+
+      section > div > img:last-child {
+        display: flex;
+        width: 400px;
+        border: 1px solid black;
+      }
+      section > dl {
+        position: relative;
+        top: 300px;
+        padding-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <header><b>z-index</b></header>
+    <main>
+      <section class="section">
+        <div class="section__image-container">
+          <img
+            src="https://images.pexels.com/photos/59816/swan-bird-nature-water-bird-59816.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+            alt=""
+          />
+
+          <img
+            src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d70397b1-3c21-4150-9b5e-4159c26486a4/dfxcrh7-644948a5-0e5c-463f-bd10-1ab07912ca89.png/v1/fill/w_1280,h_718,q_80,strp/nature_s_symphony__waterfall_masterpiece_by_odysseyorigins_dfxcrh7-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Q3MDM5N2IxLTNjMjEtNDE1MC05YjVlLTQxNTljMjY0ODZhNFwvZGZ4Y3JoNy02NDQ5NDhhNS0wZTVjLTQ2M2YtYmQxMC0xYWIwNzkxMmNhODkucG5nIiwiaGVpZ2h0IjoiPD03MTgiLCJ3aWR0aCI6Ijw9MTI4MCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS53YXRlcm1hcmsiXSwid21rIjp7InBhdGgiOiJcL3dtXC9kNzAzOTdiMS0zYzIxLTQxNTAtOWI1ZS00MTU5YzI2NDg2YTRcL29keXNzZXlvcmlnaW5zLTQucG5nIiwib3BhY2l0eSI6OTUsInByb3BvcnRpb25zIjowLjQ1LCJncmF2aXR5IjoiY2VudGVyIn19.hiGyU_LDrnqJqKGrs9DOAU05nc48weScucYgSV2QhpE"
+            alt=""
+          />
+        </div>
+        <dl>
+          <dt>
+            <b>About z-index</b>
+          </dt>
+          <dd>
+            z-index property in css used to conrole the stacking order of the
+            positioned elements. This property can applied to elements having
+            "position" value other than 'static'
+            <br />
+            <p>Explanation :</p>
+            1. Elements with the higher z-index value are stacked above elements
+            with lower value. <br />
+            2. If two element have same z-index value, then the one that comes
+            later will be stacked on the top. <br />
+            3. In above example if we change the z-index of the second image to
+            first it will stacked at the top and vise-versa
+          </dd>
+        </dl>
+      </section>
+    </main>
+  </body>
+</html>
