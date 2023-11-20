@@ -1,0 +1,131 @@
+Q2)
+
+Solution: 
+I. justify-content :
+--------------------
+
+In CSS, the justify-content property is used within a flex container to align its child elements along the main axis. The main axis is determined by the flex-direction property, which can be set to row (horizontal) or column (vertical).
+The justify-content property has several values that dictate how the child elements are distributed along the main axis. Here are the possible values:
+
+1. flex-start: Default value. Items are packed at the start of the container.
+
+.flex-container {
+  justify-content: flex-start;
+}
+
+2. flex-end: Items are packed at the end of the container.
+.flex-container {
+  justify-content: flex-end;
+}
+
+3. center: Items are centered along the main axis.
+.flex-container {
+  justify-content: center;
+}
+
+4. space-between: Items are evenly distributed in the container, with space placed between them.
+.flex-container {
+  justify-content: space-between;
+}
+
+5. space-around: Items are evenly distributed in the container, with space placed around them.
+.flex-container {
+  justify-content: space-around;
+}
+
+6.space-evenly: Items are evenly distributed in the container, with equal space around them.
+.flex-container {
+  justify-content: space-evenly;
+}
+
+These values give you control over how the available space is distributed among the child elements
+ along the main axis of the flex container. 
+ It's important to note that justify-content applies only to the main axis, 
+ and for alignment along the cross axis, you would use the align-items property.
+
+ II. align-items:
+ ----------------
+ 
+The align-items property in CSS is used within a flex container to define how its child elements
+ should be aligned along the cross axis. The cross axis is perpendicular to the main axis, which 
+ is determined by the flex-direction property (either row for a horizontal main axis or column for
+  a vertical main axis).
+
+Here are the possible values for the align-items property:
+
+1. flex-start: Default value. items are aligned at the start of the cross axis.
+
+.flex-container {
+  align-items: flex-start;
+}
+
+2. flex-end: Items are aligned at the end of the cross-axis
+
+.flex-container {
+  align-items: flex-end;
+}
+
+3. align-items: Items are aligned at the center of the cross-axis.
+.flex-container {
+  align-items: center;
+}
+
+4. baseline:  Items are aligned such that their baselines align. 
+This is relevant when the items have different text axis.
+
+.flex-container {
+  align-items: baseline;
+}
+
+III. gap :
+-----------
+
+The gap property in CSS is used with the CSS Grid Layout and Flexbox to specify the 
+size of the gap between rows and columns. It simplifies the process of defining the
+ spacing between grid or flex container items.
+
+ For CSS Grid Layout:
+In the context of CSS Grid, the gap property is a shorthand for the grid-row-gap and 
+grid-column-gap properties. It sets the size of the gap between rows and columns within
+ the grid container.
+
+ For Flexbox:
+In the context of Flexbox, the gap property is used to set the size of the gap between flex container items.
+
+
+IV. flex-direction :
+--------------------
+
+The flex-direction property in CSS is used to define the direction of the main axis in a flex container. 
+The main axis is the primary axis along which flex items are placed. It also determines the direction in
+ which the flex items flow within the container. The property can take one of the following values:
+
+1. row: This is the default value. The main axis is the horizontal axis,
+   and flex items are placed in a row from left to right.
+
+2. row-reverse: Similar to row, but the main axis is reversed, so flex items are placed 
+   in a row from right to left.
+
+3. column: The main axis is the vertical axis, and flex items are placed in a column from top to bottom.
+
+4. column-reverse: Similar to column, but the main axis is reversed, so flex items are placed in a
+ column from bottom to top.
+
+V. flex-wrap :
+--------------
+
+In CSS, the flex-wrap property is used in a flex container to control whether the flex
+ items should be forced onto a single line or allowed to wrap into multiple lines.
+
+It has three possible values:
+
+1. nowrap: This is the default value. It means that the flex items will be placed on a single line,
+ and the container will not wrap them onto additional lines.
+
+2. wrap: The flex items are allowed to wrap onto multiple lines if needed, creating new lines as necessary.
+
+3. wrap-reverse: Similar to wrap, but the lines are stacked in reverse order. 
+  The first line is at the bottom, and subsequent lines are stacked above.
+
+
+

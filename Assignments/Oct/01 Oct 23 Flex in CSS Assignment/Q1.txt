@@ -1,0 +1,24 @@
+Q) CSS Flexbox and CSS Grid layouts and when to choose one over the other?
+
+Solution : Flexbox and CSS grid are two powerful layout systems in css that
+enable developers to create complex and responsive web layouts that enables
+developers to create complex and responsive web layouts. While both can be used
+for the purpose of layout purpose, they have different strength and are designed
+for different use cases.
+
+I. CSS Flexbox:
+   1. One-Dimensional Layouts: Flexbox is particularly well-suited for one-Dimensional 
+   layouts, such as row or column. it is great for aligning items along a single axis.
+
+   2. Ordering and alignment: it is useful when need to record elements visually or align them within a container.
+
+   3. When the content layout is primarily in one dimension  flex box is good choice.
+
+II. CSS Grid:
+    1. two Dimensional layouts: Grid is designed for creating layouts, allowing you to define rows and columns.
+     it is excellent for create grid layouts.
+    
+    2. Responsive Design: It is powerful for building responsive layouts, especially when dealing with a
+      variety of screen sizes.
+    
+    3. when layout involves both row and columns then the grid  is the better choice.
