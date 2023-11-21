@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+
+      .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 100px);
+        gap: 5% 2.5%;
+        width: 80vw;
+        margin: auto;
+      }
+
+      .container > div {
+        border: 2px solid black;
+        width: 100%;
+      }
+      div > img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .first-box {
+        grid-area: 1/1/1/3;
+      }
+
+      .third-box {
+        grid-area: 2/1/4/2;
+      }
+
+      .fifth-box {
+        grid-area: 2/3/4/4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box first-box">
+        <img
+          class="box__image"
+          src="https://www.shutterstock.com/shutterstock/photos/129390128/display_1500/stock-photo-sunrise-over-the-sea-panorama-129390128.jpg"
+          alt=""
+        />
+      </div>
+      <div class="box">
+        <img
+          class="box__image"
+          src="https://img.freepik.com/free-photo/beautiful-natural-view-landscape_23-2150787996.jpg?t=st=1700579031~exp=1700582631~hmac=90e72e9044cf618970ebe944699ade74336bdff510113326040b853d580d96a7&w=1060"
+          alt=""
+        />
+      </div>
+      <div class="box third-box">
+        <img
+          class="box__image-third"
+          src="https://img.freepik.com/premium-photo/boat-docked-calm-lake-dreamy-landscape-with-beautiful-mountain_23-2148153614.jpg?w=996"
+          alt=""
+        />
+      </div>
+      <div class="box forth-box">
+        <img
+          class="box__image"
+          src="https://img.freepik.com/free-photo/beautiful-shot-snowy-mountains-background-blue-sky_181624-29273.jpg?size=626&ext=jpg"
+          alt=""
+        />
+      </div>
+      <div class="box fifth-box">
+        <img
+          class="box__image"
+          src="https://img.freepik.com/free-photo/reflection-rocky-mountains-sky-beautiful-lake_23-2148153610.jpg?size=626&ext=jpg"
+          alt=""
+        />
+      </div>
+      <div class="box">
+        <img
+          class="box__image-third"
+          src="https://img.freepik.com/free-photo/reflection-rocky-mountains-sky-beautiful-lake_23-2148153610.jpg?size=626&ext=jpg"
+        />
+      </div>
+    </div>
+  </body>
+</html>
