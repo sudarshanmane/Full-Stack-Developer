@@ -2,31 +2,77 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=initial-scale=1.0" />
+    <title>Document</title>
     <style>
-      .grid-container {
-        display: grid;
-        grid-template-columns: 100px 100px;
-        grid-auto-rows: 50px;
-        gap: 10px;
+      .header {
+        text-align: center;
+        margin-bottom: 20px;
       }
 
-      .grid-item {
-        background-color: lightblue;
-        border: 1px solid blue;
-        text-align: center;
-        padding: 10px;
+      .container {
+        display: grid;
+        grid-template-columns: 400px 400px;
+        grid-auto-rows: 100px 50px 75px;
+        gap: 10px;
+      }
+      .container > div {
+        background: skyblue;
+        border: 1px solid black;
+      }
+      .container-auto-column {
+        display: grid;
+        grid-template-rows: 100px 100px 100px 100px;
+        grid-auto-columns: 100px;
+      }
+      .container-auto-column > div {
+        border: 1px solid black;
       }
     </style>
   </head>
   <body>
-    <div class="grid-container">
-      <div class="grid-item">1</div>
-      <div class="grid-item">2</div>
-      <div class="grid-item">3</div>
-      <div class="grid-item">4</div>
-      <div class="grid-item">5</div>
-    </div>
-    <div class=""></div>
+    <header class="header"><b>Grid</b></header>
+    <main class="main">
+      <section class="text-content">
+        <p>
+          The properties <b>`grid-auto-rows`</b> and
+          <b>`grid-auto-columns`</b> in css Grid layout are used to define the
+          height and width, respectively, of rows and columns that are
+          automatically generated that are generated automatically when there is
+          no explicit definition for rows and columns in the grid.
+        </p>
+        <h1>Example 1: `grid-auto-row`</h1>
+
+        <img src="./Images/gacCode.png" alt="" />
+        <p><b> Result : </b></p>
+        <div class="container">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <p>
+          In this example we, created grid with two explicit columns with the
+          row size of the 100px for implicitly created rows.
+        </p>
+      </section>
+      <section class="section">
+        <img src="./Images/garCode.png" alt="" />
+        <div class="container-auto-column">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <p>
+          In this example we, created grid with 4 explicit rows with the columns
+          size of 100px for implicitly created columns with the
+        </p>
+      </section>
+    </main>
   </body>
 </html>
