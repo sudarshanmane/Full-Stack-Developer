@@ -1,0 +1,28 @@
+<style>
+  .grid-container-self {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    border: 1px solid black;
+  }
+  .grid-container-self__item {
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+  }
+  .grid-container-self > div:nth-child(even) {
+    justify-self: end;
+  }
+</style>
+
+<div class="grid-container-self">
+  <div class="grid-container-self__item"></div>
+  <div class="grid-container-self__item"></div>
+  <div class="grid-container-self__item"></div>
+  <div class="grid-container-self__item"></div>
+  <div class="grid-container-self__item"></div>
+  <div class="grid-container-self__item"></div>
+  <div class="grid-container-self__item"></div>
+  <div class="grid-container-self__item"></div>
+  <div class="grid-container-self__item"></div>
+</div>

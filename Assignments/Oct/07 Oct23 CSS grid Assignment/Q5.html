@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Justify</title>
+    <style>
+      main {
+        padding: 20px 100px;
+      }
+
+      .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        justify-content: center;
+        border: 1px solid black;
+      }
+
+      .grid-container > div {
+        border: 1px solid black;
+      }
+
+      .grid-container__item {
+        width: 100px;
+        height: 100px;
+        border: 1px solid black;
+      }
+
+      img {
+        width: 100%;
+      }
+
+      .grid-container-self {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        border: 1px solid black;
+      }
+
+      .grid-container-self__item {
+        height: 100px;
+        width: 100px;
+        border: 1px solid black;
+      }
+
+      .grid-container-self > div:nth-child(even) {
+        justify-self: end;
+      }
+    </style>
+  </head>
+  <body>
+    <header><b>Difference between justify-items and justify-self</b></header>
+    <main>
+      <section class="section-one">
+        <p>
+          In css, <b>Justify-items</b> and <b>justify-self</b> properties used
+          to control the horizontal alignment of grid items within a grid
+          container. Let's go over each property with code example.
+        </p>
+        <strong>1. Justify-items :</strong>
+        <p>
+          This property is used to set the default horizontal alignment for all
+          grid items inside a grid container. It applies to all direct children
+          of the grid container.
+        </p>
+        <b>Example 1:</b>
+        <br />
+        <br />
+        <img src="./Images/justifyItem.png" alt="" />
+        <br />
+        <b>Result :</b>
+        <br />
+        <br />
+        <div class="grid-container">
+          <div class="grid-container__item"></div>
+          <div class="grid-container__item"></div>
+          <div class="grid-container__item"></div>
+          <div class="grid-container__item"></div>
+          <div class="grid-container__item"></div>
+          <div class="grid-container__item"></div>
+          <div class="grid-container__item"></div>
+          <div class="grid-container__item"></div>
+          <div class="grid-container__item"></div>
+        </div>
+        <p>
+          In this example all grid items inside the .grid-container will be
+          horizontally centered within their respective grid cell because
+          justify-items property is set to center.
+        </p>
+        <strong>1. Justify-self :</strong>
+        <p>
+          This property is used to set the default horizontal alignment for all
+          grid items inside a grid container individually. It applies to all
+          direct children of the grid container. It is used to control the
+          alignment of the each element individually. overriding the
+          justify-item property.
+        </p>
+        <b>Example 2:</b>
+        <br />
+        <br />
+        <img src="./Images/justifyItem.png" alt="" />
+        <br />
+        <b>Result :</b>
+        <br />
+        <br />
+        <div class="grid-container-self">
+          <div class="grid-container-self__item"></div>
+          <div class="grid-container-self__item"></div>
+          <div class="grid-container-self__item"></div>
+          <div class="grid-container-self__item"></div>
+          <div class="grid-container-self__item"></div>
+          <div class="grid-container-self__item"></div>
+          <div class="grid-container-self__item"></div>
+          <div class="grid-container-self__item"></div>
+          <div class="grid-container-self__item"></div>
+        </div>
+        <p>
+          In this example all grid items inside the .grid-container will be
+          horizontally centered within their respective grid cell because
+          justify-items and this will get override by property justify-item
+          property.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
