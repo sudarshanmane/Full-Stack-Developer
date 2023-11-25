@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      .box-section {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: 250px;
+      }
+      .box-section > div {
+        border: 1px solid black;
+      }
+
+      .box-section > div:first-child {
+        background: red;
+      }
+
+      .box-section > div:nth-child(2) {
+        background: green;
+      }
+      .box-section > div:nth-child(3) {
+        background: blue;
+      }
+      .box-section > div:last-child {
+        background: teal;
+      }
+
+      @media all and (max-width: 1200px) {
+        .box-section {
+          grid-template-columns: repeat(3, 1fr);
+          grid-auto-rows: 250px;
+        }
+      }
+      @media all and (max-width: 800px) {
+        .box-section {
+          grid-template-columns: repeat(2, 1fr);
+          grid-auto-rows: 250px;
+        }
+      }
+      @media all and (max-width: 600px) {
+        .box-section {
+          grid-template-columns: repeat(1, 1fr);
+          grid-auto-rows: 250px;
+        }
+      }
+    </style>
+  </head>
+  <body></body>
+  <main class="main">
+    <section class="box-section">
+      <div>BOX 1</div>
+      <div>BOX 2</div>
+      <div>BOX 3</div>
+      <div>BOX 4</div>
+    </section>
+  </main>
+</html>
