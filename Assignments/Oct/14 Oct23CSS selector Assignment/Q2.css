@@ -1,0 +1,23 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+ul > li:first-child,
+li + li {
+  margin-right: 10px;
+}
+

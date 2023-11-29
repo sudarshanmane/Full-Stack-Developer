@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      button {
+        background: lightblue;
+        font-size: 17px;
+        outline: none;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 10px;
+      }
+
+      button:focus {
+        border: none;
+      }
+
+      button::before {
+        content: "Join ";
+      }
+
+      button::after {
+        content: " Today";
+      }
+
+      button:hover {
+        background: teal;
+        color: white;
+        cursor: pointer;
+        box-shadow: 10px 10px 5px lightblue;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <section>
+        <button>PW Skills</button>
+      </section>
+    </main>
+  </body>
+</html>
