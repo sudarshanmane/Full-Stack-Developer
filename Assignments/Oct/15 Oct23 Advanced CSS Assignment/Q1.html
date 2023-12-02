@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./Q1.css" />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: 0px;
+      }
+      header {
+        text-align: center;
+        height: 40px;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .css-var-function {
+        padding: 40px;
+        margin-top: -20px;
+      }
+      .css-var-function > dl {
+        margin-top: 20px;
+      }
+      .css-var-function > dl > dt {
+        font-size: 18px;
+        font-weight: bold;
+      }
+      .css-var-function > dl > dd {
+        padding-left: 2%;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header><strong>CSS var() Function</strong></header>
+    <main>
+      <section class="css-var-function">
+        <p>
+          The css <b>`var()`</b> function is used to define and reference custom
+          properties, also know as css variables. css variables allows to store
+          and reuse values throughout the the stylesheet. CSS variables are
+          defined using the --prefix followed by a variable name.
+        </p>
+        <b>Purpose of var() Function</b>
+        <dl>
+          <dt>Reusability:</dt>
+          <dd>
+            CSS variables allow us to store values that we can reuse across our
+            stylesheet.
+          </dd>
+          <dt>Consistency</dt>
+          <dd>
+            by using variables, we can ensure consistent values for colors,
+            spacing, fonts and more throughout our entire design .
+          </dd>
+          <dt>Global Changes:</dt>
+          <dd>
+            If we need to make a design change, we can update the variable's
+            value once and changed will be applied to all
+          </dd>
+        </dl>
+        <hr />
+      </section>
+      <section class="buttons-section">
+        <header><strong>Solution</strong></header>
+        <button id="primaryBtn">Primary Button</button>
+        <button id="secondaryBtn">Secondary Button</button>
+      </section>
+    </main>
+  </body>
+</html>
