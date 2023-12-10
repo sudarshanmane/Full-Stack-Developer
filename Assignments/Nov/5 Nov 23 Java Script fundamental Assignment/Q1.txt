@@ -1,0 +1,16 @@
+Problem Statement 1 :
+Explain the usage of ternary operator with syntax and write a program to check whether the number is even
+or odd using the ternary operator.
+
+Solution : 
+
+The ternary operator, also known as the conditional operator, provides a concise way 
+to write simple conditional statements. It is often used as a shorthand for an
+ if-else statement. The syntax of the ternary operator is as follows:
+
+ example:
+
+ let givenNumber = 10;
+ let isEvenOrOdd = givenNumber % 2===0 ? "Even" : "Odd"
+
+ 
