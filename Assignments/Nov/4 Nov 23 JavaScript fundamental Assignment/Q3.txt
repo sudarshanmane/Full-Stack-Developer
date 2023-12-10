@@ -1,0 +1,62 @@
+Question 3: List and describe the five primitive data types in JavaScript.
+Solution:
+Data types are used to define the way data stored in memory.
+The data types is the classification of the data according to the type of value that 
+we want to operate on
+
+JavaScript is a dynamically typed language which means the variables data type is
+identified during execution.
+
+JavaScript has two types of data types.
+1. Primitive data types: primitive data type gets stored at the location where the
+ variable is stored. this means that when we assign a primitive value to a variable,
+  the value itself copied into the variables memory location.
+
+2. Non-primitive types: The data type that are derived from the primitive data types it
+is known as non-primitive data types. it is also known as derived data types or reference
+data types. Unlike primitive data types non-primitive data types are not stored directly
+in memory location where the variable is stored. Instead the variable holds a reference 
+to the actual value, which is in the heap memory of the ram.
+
+1. Primitive Data types:
+When we declare a variable and assign a primitive value to it the value itself gets 
+stored directly in the memory location where the variable is stored. This means 
+the variable holds the actual value not the reference to the value.
+
+Following are the primitive types in JavaScript.
+1. String:
+A combination of the alphabetical characters wrapped in a single or double quotes. 
+String can include any number, letter or symbol. 
+or it can be defined as collection of characters or an array 
+
+2. Number:
+Any number in JavaScript is of number type. Including floats and decimals.
+
+3. BigInt:
+In JavaScript, there is a maximum safe value, which is 2^53-1, and also there is minimu
+safe valu - 2^53-1
+
+4. Boolean:
+A boolean is a true or false.
+
+5. Null:
+Null means nothing of empty. it is used to indicate a variable or a property has no
+value.
+
+6. Undefined
+undefined is a special value that indicates a variable or property that has been declared 
+but not has been assigned.
+
+7. symbol
+In JavaScript, the symbol is primitive data type introduced in ECMAScrip6. A symbol is unique and immutable value
+that may be used as an identifier for object properties. Each time we create a symbol. it's guarantied to be 
+unique. This makes it useful for creating property keys that won't collide with other property names. 
+
+B. Non-Primitive types:
+Reference are non-primitive value and when assigned to a variable the variable is given a reference to that value.
+ The reference points to the object's location in memory.
+
+ There are two type of non-primitive:
+ 1. Arrays
+ 2. Objects
+

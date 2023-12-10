@@ -1,0 +1,19 @@
+
+Comments in JavaScript serve as annotations within your code to provide explanations,
+ documentation, or context to yourself or other developers who might read your code.
+  They are ignored by the JavaScript interpreter and don't affect the execution of the
+   program. The importance of comments includes:
+
+Single-Line Comment:
+code :
+let x = 10;  // Variable assignment with a comment
+
+Multi-Line Comment:
+code :
+/*
+  This is a multi-line comment.
+  It can span multiple lines.
+  Use it for longer explanations or comments.
+*/
+
+let y = 20; 
